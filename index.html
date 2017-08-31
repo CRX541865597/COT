@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>COT</title>
+		<link rel="shortcut icon" href="images/COT.png" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			//			$(function() {
+			//				$(window).resize(function() {
+			//					imgWH();
+			//				}).resize();
+			//
+			//				function imgWH() {
+			//					var i = 0,
+			//						imgpnglength = $('.imgpng').length;
+			//					for(i = 0; i < imgpnglength; i++) {
+			//						var imgpng = $('.imgpng').eq(i),
+			//							imgpngW = imgpng.width(),
+			//							maximgpngW = imgpng.attr("width");
+			//						if(imgpngW >= 　maximgpngW) {
+			//							imgpng.attr('width', maximgpngW);
+			//						} else {
+			//							imgpng.attr('width', imgpngW);
+			//						}
+			//					}
+			//					var imgtopW = $('.imgtop').width(),
+			//						imgtopH = $('.imgtop').height();
+			//					$('.gem-back').css({ width: imgtopW * 0.375, height: imgtopH * 0.19, marginTop: imgtopH * 0.259 });
+			//				}
+			//			});
+			//			//			document.oncontextmenu = new Function("event.returnValue=false");
+			document.onselectstart = new Function("event.returnValue=false");
+		</script>
+		<!--禁止查看源码-->
+		<script language="javascript">
+			window.onload = function() {
+				document.oncontextmenu = function(e) {
+					console.log(1);
+					e.preventDefault();
+					console.log(e);
+					if(e.button == 2) {
+						console.log(2);
+						Source = document.body.firstChild.data;
+						document.open();
+						document.close();
+						document.body.innerHTML = Source;
+						location.href = "404_cn.html"
+					}
+				};
+				document.onkeydown = function(event) {
+					console.log(1);
+					var a = event || window.event || arguments.callee.caller.arguments[0];
+					if(a.keyCode == 123){
+						Source = document.body.firstChild.data;
+						document.open();
+						document.close();
+						document.body.innerHTML = Source;
+						location.href = "404_cn.html"
+					}
+
+			};
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div id="menu">
+			<a href="index.html"><img src="images/物通链.gif" width="5%" /></a>
+			<font>Chain Of Things</font>
+			<ul class="menu">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="#section2">视频</a>
+				</li>
+				<li>
+					<a href="#section3">白皮书</a>
+				</li>
+				<li>
+					<a href="#section4">COT家族</a>
+				</li>
+				<li>
+					<a href="#section6">合作</a>
+				</li>
+				<li>
+					<a href="#section5">资讯</a>
+				</li>
+				<li>
+					<a href="index_en.html">中/英</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- container -->
+		<section id="section1" class="section section1">
+			<div class="page1" id="item-1">
+				<div class="top" data-ix="open-video">
+					<img src="images/物通链.gif" width="50%" style="position: relative;left: 128px;top: -80px;" />
+				</div>
+			</div>
+		</section>
+
+		<section id="section2" class="section section2">
+			<div class="page2" id="item-2">
+				<div id="top" style="z-index: 998;">
+					<video controls="controls" id="video1" loop>
+						<!--html页面里的mp4格式的视频支持H.264的编码格式才能重复播放-->
+						<source src="video/video.mp4" type="video/mp4">
+						<source src="video/video.webm" type="video/webm">
+						<source src="video/video.mpg" type="video/mpeg"> 您的浏览器不支持视频标签,请重新选择浏览器。
+					</video>
+				</div>
+				<div id="right">
+					ICO总量9100万枚，发行3640万枚。认购中！！！<br />
+					<a class="btn btn-primary animated infinite pulse" href="PDF/rule.pdf" target="_blank" style="z-index: 8;">认购规则>></a>
+				</div>
+			</div>
+		</section>
+
+		<section id="section3" class="section section3">
+			<div class="page3" id="item-3">
+				<div id="top">
+					<h1>CTO白皮书</h1>
+				</div>
+				<div id="center">
+					COT 致力于链接与打通全球物联网数据信息，打造全球首个物联网大数据 bigdata,megadata的“信息交互”、“去中心化”、“开放式”的物联网数据超市，并打造出一套完整数据行业交互和解决方案（Apache Drill、 RapidMiner、Pentaho BI 等），加速实现人与物品（H2T)零距离，提高大数据的 HPCC 和 IITA，从而建立更有效而庞大的物联网生态应用系统。
+				</div>
+				<div id="down">
+					<span class="wp-download">
+					<a href="PDF/COT_CN_white_paper.pdf" target="_blank">英文版白皮书</a>|
+					<a href="PDF/COT_CN_white_paper.pdf" target="_blank">中文版白皮书</a>
+				</span>
+				</div>
+			</div>
+		</section>
+
+		<section id="section4" class="section section4">
+			<div class="page4" id="item-4">
+				<div id="center">
+					<div id="top" class="top3">
+						<h1>团队成员</h1>
+					</div>
+					<div id="left" onclick="left()">
+						<img src="images/left.png" title="上一张" />
+					</div>
+					<ul id="img">
+						<li id="first">
+							<img src="images/team/z.jpg" title="赵" />
+							<span><font style="font-size: 25px;">赵</font>炳丞：联合创始人成员：企业家、资深投资专家。具有15年以上金融投资领域管理经验，一直从事区块链的底层技术开发，现拥有20人以上的专业技术团队，并形成自己独特的行业观点。</span>
+						</li>
+						<li>
+							<img src="images/team/d.jpg" title="张" />
+							<span><font style="font-size: 25px;">张</font>一丹：联合创始人成员：资深CFO，毕业于英国剑桥大学金融管理系，中国比特币天使投资人，多年互联网金融证券管理经验，成功企业家。职业生涯中参与了国内多家大型集团公司的股份制改造审计工作，拥有丰富的资金管理经验以及扎实的风险控制能力。</span>
+						</li>
+
+						<li>
+							<img src="images/team/Joe.jpg" title="JoeSmaby" />
+							<span><font style="font-size: 25px;">JoeSmaby</font>：联合创始人成员，中央密歇根大学金融学士学位。美国肯特金融集团中西部地区的供应商，销售创始人CEO。</span>
+						</li>
+						<li>
+							<img src="images/team/songz.jpg" title="孙" />
+							<span><font style="font-size: 25px;">孙</font>盛龙：联合创始人成员：中西部地区互联网最大软硬件供应商，资深大数据核心开发、sperk深入剖析研究，二十年大数据核心研发、探索、创新。区块链，物联网等项目高级技术探究者。</span>
+						</li>
+						<li>
+							<img src="images/team/hyz.jpg" title="赵" />
+							<span><font style="font-size: 25px;">赵</font>浩洋：联合创始人成员,西安科朗商务信息咨询有限公司CEO。西安理工大学工商学硕士，高级国际外汇分析师、高级金融数据分析师。熟悉政府、国资、国企、民企运作，擅长企业战略、创业投资、财务管理及风险控制。</span>
+						</li>
+						<li>
+							<img src="images/team/Mike.jpg" title="Mike Schmidt" />
+							<span><font style="font-size: 25px;">Mike Schmidt</font>：COT官方顾问，Olivet学院学士学位。美国团队金融集团经销商服务和大瀑布消费者收藏中心Gredit manager，经过27年的消费金融业务，最近21年来与老肯特/第五大银行。在第五任第三任任职期间。</span>
+						</li>
+						<li>
+							<img src="images/team/sz.jpg" title="邵" />
+							<span><font style="font-size: 25px;">邵</font>均琦：COT天使投资人,传统企业家，比特币天使投资人，7年互联网营销管理经验，2013开始从事JAVA研究，近2年致力于专业物联网研究。曾担任过基于Ripple以及Bitcoin的跨境汇兑应用。</span>
+						</li>
+						<li>
+							<img src="images/team/lt.jpg" title="刘" />
+							<span><font style="font-size: 25px;">刘</font>涛：COT天使投资人。资深互联网金融、区块链、物联网、虚拟货币研究探索者。有着对互联网金融、虚拟货币领域独特的个人见解。</span>
+						</li>
+						<li>
+							<img src="images/team/Matt.jpg" title="Matt Maczka" />
+							<span><font style="font-size: 25px;">Matt Maczka</font>：COT官方技术顾问，美国Team Financial Group首席风控官，普渡大学建筑工程与管理士学位，巴特勒大学工商管理硕士学位，印第安纳州专业的土木工程师。</span>
+						</li>
+						<li>
+							<img src="images/team/g.jpg" title="郭" />
+							<span><font style="font-size: 25px;">郭</font>：COT首席技术官，COT原班技术体系核心成员。十四年专注互联网技术，精通嵌入式技术开发、JAVA、RFID、大数据等计算机技术应用。十年区块链技术研究，精通加密数字资产数据逻辑算法等，其团队组织成员可在短时间内开发一款完整的区块链数据。</span>
+						</li>
+						<li>
+							<img src="images/team/l.jpg" title="骆" />
+							<span><font style="font-size: 25px;">骆</font>：COT首席技术资讯官，原班技术体系核心成员。高级JAVA工程师，多年AI大数据统计研发，早期互联网IT技术领域研究探索者，百度AI大数据成员之一。</span>
+						</li>
+						<li>
+							<img src="images/team/c.jpg" title="陈" />
+							<span><font style="font-size: 25px;">陈</font>：COT原班技术体系核心成员。Web前端工程师。多年前端开发工作经验。从事互联网行业多年，有自己的互联网创业经历，对于物联网金融，区块链技术有相关研究。</span>
+						</li>
+						<li>
+							<img src="images/team/w.jpg" title="王" />
+							<span><font style="font-size: 25px;">王</font>：COT首席设计师，COT原班技术体系核心成员。多年互联网UI设计工作经验，有自己的独特设计风格和理念，外号：“奇葩”设计师。资深设计师。曾任多家IT公司首席设计师。</span>
+						</li>
+						<li>
+							<img src="images/team/f.jpg" title="付" />
+							<span><font style="font-size: 25px;">付</font>：COT原班技术体系核心成员。从事多年互联网IT行业以来，具备深资独特的设计理念，经验丰富，风格前卫。以“用心来做事，用感恩的心做人”带我一路走来，更深入的了解用户体验，注重人性化设计，研究改善用户体验。</span>
+						</li>
+					</ul>
+					<div id="right" onclick="right()">
+						<img src="images/right.png" title="下一张" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+			function left() {
+				$('#img').find('li').eq(0).css('margin-left', '-100px');
+				$('#img').find('li').eq(0).appendTo($('#img')).css('margin-left', '80px');
+			}
+
+			function right() {
+				$('#img').find('li').eq(0).css('margin-left', '100px');
+				$('#img').find('li').eq(0).appendTo($('#img')).css('margin-left', '80px');
+			}
+		</script>
+
+		<section id="section6" class="section section6">
+			<div id="top" style="z-index: 3;">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td><img src="images/colourless/友情链接_01_01.png" onmouseover="this.src='images/cooperation/友情链接_01.png'" /></td>
+						<td><img src="images/colourless/友情链接_07_07.png" onmouseover="this.src='images/cooperation/友情链接_07.png'" /></td>
+						<td><img src="images/colourless/友情链接_05_05.png" onmouseover="this.src='images/cooperation/友情链接_05.png'" /></td>
+					</tr>
+					<tr>
+						<td><img src="images/colourless/友情链接_13_13.png" onmouseover="this.src='images/cooperation/友情链接_13.png'" /></td>
+						<td><img src="images/colourless/友情链接_11_11.png" onmouseover="this.src='images/cooperation/友情链接_11.png'" /></td>
+						<td><img src="images/colourless/友情链接_09_09.png" onmouseover="this.src='images/cooperation/友情链接_09.png'" /></td>
+					</tr>
+					<tr>
+						<td><img src="images/colourless/友情链接_02_02.jpg" onmouseover="this.src='images/cooperation/友情链接_02.jpg'" /></td>
+						<td><img src="images/colourless/友情链接_15_15.png" onmouseover="this.src='images/cooperation/友情链接_15.png'" /></td>
+						<td><img src="images/colourless/友情链接_17_17.png" onmouseover="this.src='images/cooperation/友情链接_17.png'" /></td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section id="section5" class="section section5">
+			<div class="page5" id="item-5">
+				<div class="left">
+					<!--<div id="top">
+						新闻资讯
+					</div>-->
+					<div id="center">
+						<div id="top">
+							<h3>新闻资讯（NEWS）</h3>
+						</div>
+						<div id="down">
+							<ul>
+								<li>ICO：
+									<a href="moreQ.html">ICO是一种为加密数字货币/区块链项目筹措资金的常用方式，早期参与者可以从中获得初始产生的加密数字货币作为回报。ico是国际上加密数字货币/区块链社区的产物，为区块链的开发者筹措足够的运营资金，大部分ico筹措的资金都是比特币或者其他加密数字货币。ICO一般会在区块链项目完成前进行，帮助项目筹措资金，以支持项目从创建团队到项目发行过程中所产生的费用。对于一些大的区块链项目，会将从ico中筹措的部分资金存放到基金里以支持项目的持续发展，包括代币的初始分配模型等。ICO参与者对于一个项目的成功非常重要，他们会在社区里为该区块链项目进行宣传，使它产生的代币在开始交易前就获得流动性。但ico的参与者最看重的依然是由项目发展或代币发行后价格升值带来的潜在收益。</a>
+								</li>
+								<li>物联网：
+									<a href="moreQ.html">物联网专业是一门交叉学科，涉及计算机、通信技术、电子技术、测控技术等专业基础知识，以及管理学、软件开发等多方面知识。作为一个处于摸索阶段的新兴专业，各校都专门制定了物联网专业人才培养方案。学生需要学习包括计算机系列课程、信息与通信工程、模拟电子技术、物联网技术及应用、物联网安全技术等几十门课程，同时还要打牢坚实的数学和物理基础。另外，优秀的外语能力也是必备条件，因为目前物联网的研发、应用主要集中在欧美等国家，学生需要阅读外文资料和应对国际交流。</a>
+								</li>
+								<li>区块链：
+									<a href="moreQ.html">区块链是一种按照时间顺序将数据区块以顺序相连的方式组合成的一 种链式数据结构， 并以密码学方式保证的不可篡改和不可伪造的分布式账本。广义来讲，区块链技术是利用块链式数据结构来验证与存储数据、利用分布式节点共识算法来生成和更新数据、利用密码学的方式保证数据传输和访问的安全、利用由自动化脚本代码组成的智能合约来编程和操作数据的一种全新的分布式基础架构与计算范式。</a>
+								</li>
+							</ul>
+						</div>
+						<div id="more">
+							<a href="News_cn.html">更多>></a>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<!--<div id="top">
+						常见问题
+					</div>-->
+					<div id="center">
+						<div id="top">
+							<h3>ICO常见问题（FAQ）</h3>
+						</div>
+						<div id="down">
+							<div id="down1">
+								<p>什么是COT？</p>
+							</div>
+							<div id="down1_1">
+								<p></p>
+							</div>
+							<div id="down2">
+								<p>官方网址是多少？</p>
+							</div>
+							<div id="down2_1">
+								<p></p>
+							</div>
+							<div id="down3">
+								<p>COT代币是什么？总量多少？会增发吗？</p>
+							</div>
+							<div id="down3_1">
+								<p></p>
+							</div>
+						</div>
+						<div id="more">
+							<a href="News_cn.html">更多>></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="bottom" class="container">
+				<div id="left" class="col-md-offset-1 col-md-3" style="z-index: 2;">
+					<div id="ul_li">
+						<ul>
+							<li>
+								<a href="##">关于我们</a>
+							</li>
+							<li>
+								<a href="##">新闻资讯</a>
+							</li>
+							<li>
+								<a href="##">风险提示</a>
+							</li>
+							<li>
+								<a href="##">免责声明</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="center" class="col-md-4" style="z-index: 2;">
+					<div id="ul_li">
+						<ul>
+							<li>
+								<a href="##">&nbsp;</a>
+							</li>
+							<li>
+								<a href="##">官方微信：COTKF1314</a>
+							</li>
+							<li>
+								<a href="##">客服QQ：3500718416</a>
+							</li>
+							<li>
+								<a href="##">官方邮箱：sxdhwl2017@163.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="right" style="z-index: 2;font-family: '微软雅黑';">
+					<img src="images/COT公众号.jpg" id="img1" /><br />
+					<font class="font1">公众号</font>
+					<img src="images/COT客服.jpg" id="img2" /><br />
+					<font class="font2">官方客服</font>
+				</div>
+				<img src="images/物通链.gif" width="8%" style="margin-top: -174px;margin-left: 57px;" />
+
+			</div>
+		</section>
+
+		<!--回到顶部-->
+		<div id="arrow_up">
+			<a href="index.html"><img src="images/slide_up.gif" width="48px" height="86px" alt="回到顶部" title="回到顶部"></a>
+		</div>
+		<!--canvas动画效果-->
+		<!--<script type="text/javascript" color="99,45,206" opacity='0.5' z-index="10" count="200" src="js/canvas-nest.js"></script>-->
+
+		<script type="text/javascript">
+			var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+			$(window).scroll(function() {
+				var Yoffset = window.pageYOffset || document.documentElement.scrollTop;
+				if(Yoffset > 2 * h) {
+					$("#arrow_up").fadeIn(100);
+				} else {
+					$("#arrow_up").fadeOut(100);
+				};
+			});
+			$("#arrow_up").bind("click", function(e) {
+				e.preventDefault();
+				$("body").animate({ "scrollTop": "0" }, 1000);
+
+			});
+		</script>
+
+		<script src="js/sectionscroll.js" type="text/javascript"></script>
+		<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>
